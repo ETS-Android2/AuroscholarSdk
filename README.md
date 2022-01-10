@@ -21,7 +21,7 @@ Step 1 : Add the dependency in your app/build.gradle(:app)
 
 ```swift
 dependencies {
-	          implementation 'com.github.AuroScholar:microscholarship:2.3.2'
+	          implementation 'com.github.iampradeepkumarbaral:AuroscholarSdk:2.3.3'
 
 
 
