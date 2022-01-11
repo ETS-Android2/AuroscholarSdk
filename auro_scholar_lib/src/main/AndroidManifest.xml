@@ -38,7 +38,7 @@
             android:name=".home.presentation.view.activity.CameraActivity"
             android:label="@string/title_activity_camera"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:theme="@style/newTheme.NoActionBar"
             android:exported="true"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
@@ -112,7 +112,7 @@
             android:configChanges="locale"
             android:screenOrientation="portrait"
             android:exported="true"
-            android:theme="@style/AppTheme.NoActionBar" />
+           />
     </application>
 
 </manifest>
