@@ -21,11 +21,11 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme.NoActionBar"
-
         android:largeHeap="true"
         tools:replace="android:allowBackup,android:icon,android:roundIcon">
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait"
+            android:exported="true"
             android:windowSoftInputMode = "stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

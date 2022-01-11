@@ -19,7 +19,7 @@
     <application
         android:usesCleartextTraffic="true">
         <activity android:name=".home.presentation.view.activity.newDashboard.StudentMainDashboardActivity"
-
+            android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan"/>
 
@@ -39,18 +39,22 @@
             android:label="@string/title_activity_camera"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name=".util.permission.PermissionsActivity"
-            android:windowSoftInputMode="stateAlwaysHidden" />
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="true"/>
         <activity
             android:name=".home.presentation.view.activity.StudentDashboardActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true"
             android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
             />
         <activity
             android:name=".home.presentation.view.activity.HomeActivity"
             android:screenOrientation="portrait"
+            android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
@@ -66,7 +70,8 @@
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" /> <!-- Firebase Notifications -->
-        <service android:name=".util.firebase.FirebaseMessagingService">
+        <service android:name=".util.firebase.FirebaseMessagingService"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
@@ -99,12 +104,14 @@
             android:exported="true" />
         <activity
             android:name=".util.cropper.CropImagesActivity"
-            android:theme="@style/Base.Theme.AppCompat" />
+            android:theme="@style/Base.Theme.AppCompat"
+            android:exported="true"/>
 
         <activity
             android:name=".home.presentation.view.activity.newDashboard.SubjectPreferencesActivity"
             android:configChanges="locale"
             android:screenOrientation="portrait"
+            android:exported="true"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
