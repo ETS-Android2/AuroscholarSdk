@@ -4,8 +4,8 @@ apply from: "dependencies.gradle"
 
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion '30.0.1'
+    compileSdkVersion 29
+
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 29
